@@ -140,3 +140,29 @@ table tbody tr:hover .actions {
 .text-center {
     text-align: center;
 }
+
+.card-body {
+    position: relative;
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid var(--white);
+    border-radius: .4rem;
+    transition: all 0.3s;
+}
+
+.card-body::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: violet;
+    transition: all ease 0.3s;
+}
+
+.card-body:hover .card-body::before {
+    top: 0;
+    left: 0;
+}
