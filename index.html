@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money</title>
+    <link rel="stylesheet" href="./public/css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h3>Money Events</h3>
+                <form action="" class="form">
+                    <div class="form-group">
+                        <label for="event">Event</label>
+                        <select name="event" id="event" class="form-control">
+                            <option value="">-- Select --</option>
+                            <option value="Enter">Income</option>
+                            <option value="Enter">Output</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="amount">Amount</label>
+                        <input type="number" name="amount" id="amount" placeholder="Amount: 50000" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="desc">Description</label>
+                        <textarea name="desc" id="desc" name="desc" class="form-control"
+                            class="form-control"></textarea>
+                    </div>
+                    <div class="from-group">
+                        <button type="submit" class="btn">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-8">
+                <div class="flex">
+                    <div>
+                        <h3>Data</h3>
+                    </div>
+                    <div>
+                        <form action="" method="post">
+                            <select name="filter">
+                                <option value="">-- filter --</option>
+                                <option value="Income">Income</option>
+                                <option value="Outcome">Outcome</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Event</th>
+                            <th>Amount</th>
+                            <th>Description</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Income</td>
+                            <td>50.000frw</td>
+                            <td>Description of money</td>
+                            <td>
+                                <div class="visible">
+                                    <a href="edit.html?get=1" class="btn btn-sm btn-info">Edit</a>
+                                    <a href="edit.html?delete=1" class="btn btn-sm btn-danger">Delete</a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Income</td>
+                            <td>50.000frw</td>
+                            <td>Description of money</td>
+                            <td>
+                                <div class="visible">
+                                    <a href="edit.html?get=1" class="btn btn-sm btn-info">Edit</a>
+                                    <a href="edit.html?delete=1" class="btn btn-sm btn-danger">Delete</a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Income</td>
+                            <td>50.000frw</td>
+                            <td>Description of money</td>
+                            <td>
+                                <div class="visible">
+                                    <a href="edit.html?get=1" class="btn btn-sm btn-info">Edit</a>
+                                    <a href="edit.html?delete=1" class="btn btn-sm btn-info">Delete</a>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
