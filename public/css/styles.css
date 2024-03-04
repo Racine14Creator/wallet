@@ -166,3 +166,15 @@ table tbody tr:hover .actions {
     top: 0;
     left: 0;
 }
+
+.wrapper-width {
+    position: relative;
+    max-width: 700px;
+    margin: auto;
+}
+
+@media(max-width:760px) {
+    .wrapper-width {
+        width: 100%;
+    }
+}
